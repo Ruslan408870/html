@@ -1,31 +1,99 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Manager</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <main>
-    <div class="login">
-        <h1>Вход</h1>
-        <p>Войдите в систему</p>
-        <div class="login-form">
-            <span>Логин:</span>
-            <input type="text" placeholder="Введите логин" id="login">
-            <span>Пароль:</span>
-            <input type="password" placeholder="Введите пароль" id="password">
-            <div class="remember">
-                <input type="checkbox" id="remember">
-                <span>Запомнить меня</span>
-                
-        </div>
-        <button>Войти</button>
-        <a href="#">Забыли пароль?</a>
-        <a href="register.html">Зарегистрироваться</a>
+   <header class="header">
+    <div class="header-logo"> Student Manager</div>
+    <nav class="nav-links">
+        <a href="index.html">Главная</a>
+        <a href="students.html">Студенты</a>
+        <a href="about.html">О нас</a>
+        </nav>
+    </header>
+
+   
+        
+        <section class="card">
+            <h2>Добавить студента</h2>
+            <from action="#">
+                <div class="form-group">
+                    <label for="first-name">Имя:</label>
+                    <input type="text" id="first-name" placeholder="Введите имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name">Фамилия:</label>
+                    <input type="text" id="last-name" placeholder="Введите фамилию">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+                <div class="form-group">
+                    <label for="group">Группа:</label>
+                    <input type="text" id="group" placeholder="Введите группу">
+                </div>
+                 <button type="submit" class="submit-btn">Добавить студента</button>
+            </from>
+        </section>
+         <section class="card">
+            <h2>Список студентов</h2>
+            <div class="table-wrapper">
+                <table class="student-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Имя</th>
+                            <th>Фамилия</th>
+                            <th>Email</th>
+                            <th>Группа</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Тони</td>
+                            <td>Старк</td>
+                            <td>stark.industries@mail.com</td>
+                            <td>IT-1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Питер</td>
+                            <td>Паркер</td>
+                            <td>spider.man@mail.com</td>
+                            <td>IT-2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Наталия</td>
+                            <td>Рашман</td>
+                            <td>black.widow@mail.com</td>
+                            <td>IT-3</td>
+                        </tr>
+                        <tr>
+                              <td>4</td>
+                            <td>dr</td>
+                            <td>Бенер</td>
+                            <td>hulk@mail.com</td>
+                            <td>IT-4</td>
+                        </tr>
+                         <tr>
+                            <td>5</td>
+                            <td>Тор</td>
+                            <td>Одинсон</td>
+                            <td>thor@mail.com</td>
+                            <td>IT-5</td>
+                        </tr>
+                    </tbody>
+                </table>
     </div>
- </main>
+
 </body>
 </html>
